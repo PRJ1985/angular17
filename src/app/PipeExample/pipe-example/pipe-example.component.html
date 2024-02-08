@@ -1,0 +1,60 @@
+<p style="color: blueviolet;">pipe-example Component works!</p>
+<p>  {{ "2" | myCustom: 10: {'Name':'Prashant','Surname':'Joshi'} : "&%"}}</p>
+
+
+
+<p style="color: blueviolet;">Pure Pipe Example</p>
+Enter Hero Name    :<input  [(ngModel)]='heroName' /><br><br>
+Can this user Fly :<input type="checkbox" [(ngModel)]='canFly'/><br><br>
+Reference Same Instance :<input type="checkbox" [(ngModel)]='referenceSameInstance'/><br><br>
+
+<button (click)="addHero()" >Add Hero</button>
+
+<div>
+    <table    class="styled-table">
+        <tr>
+          <th>Name</th>
+          <th>Flying </th>
+        </tr>
+        <tbody *ngFor="let hero of listOfHeros">
+            <tr >
+            <td  >{{hero.name}}</td>
+            <td>{{hero.canFlyi}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+Pure Implementation
+<div>
+    <table   class="styled-table">
+        <tr>
+          <th>Name</th>
+          <th>Flying </th>
+        </tr>
+        <tbody *ngFor="let hero of (listOfHeros | flyingHeroPure)">
+            <tr >
+            <td  >{{hero.name}}</td>
+            <td>{{hero.canFlyi}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+ImPure Implementation
+<div>
+    <table    class="styled-table">
+        <tr>
+          <th>Name</th>
+          <th>Flying </th>
+        </tr>
+        <tbody *ngFor="let hero of (listOfHeros | superHeroImpure)">
+            <tr >
+            <td  >{{hero.name}}</td>
+            <td>{{hero.canFlyi}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

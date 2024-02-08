@@ -1,0 +1,26 @@
+<div class="topnav">
+  <nav mat-tab-nav-bar color="primary" [tabPanel]="tabPanel">
+    <a routerLink="life-cycle-hook" routerLinkActive="active"
+      >Angular Life Cycle Hooks</a
+    >
+    <a routerLink="change-detection" routerLinkActive="active"
+      >Change Detection</a
+    >
+    <a routerLink="data-communication" routerLinkActive="active"
+      >Data Communication</a
+    >
+    <a routerLink="directives-example" routerLinkActive="active"
+      >Directives Sample</a
+    >
+    <a routerLink="pipe-example" routerLinkActive="active">Pipe Example</a>
+  </nav>
+</div>
+<mat-tab-nav-panel #tabPanel class="content">
+  <router-outlet></router-outlet>
+</mat-tab-nav-panel>
+<mat-icon
+  aria-hidden="false"
+  aria-label="Example home icon"
+  fontIcon="home"
+></mat-icon>
+ 

@@ -1,0 +1,24 @@
+<div>
+  <table class="styled-table">
+    <tr>
+      <th>ID</th>
+      <th>Image</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Description</th>
+    </tr>
+    <tbody *ngFor="let product of productList; let i = index">
+      <tr>
+        <td>{{ product.id }}</td>
+        <td>
+          <img style="height: 80px" [src]="product.image" /> Rs.{{
+            product.price
+          }}
+        </td>
+        <td>{{ product.title }}</td>
+        <td>{{ product.description }}</td>
+        <td>{{ product.category }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

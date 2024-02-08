@@ -1,0 +1,16 @@
+ 
+
+<div class="cursorContainer" *ngIf="!isDataLoaded">
+    <mat-spinner class="spinnerComp"></mat-spinner>
+</div>
+
+<div *ngIf="isDataLoaded">
+    Remove a product  by entering its ID  
+<input [(ngModel)]="removeProductID"/>
+ 
+<button (click)="removeProduct()" >Remove</button> <br>
+<button (click)="resetTolatest()">reset</button>
+
+<app-change-detection [productList]="productList"></app-change-detection>
+
+</div>

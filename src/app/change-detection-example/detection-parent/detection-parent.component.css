@@ -1,0 +1,10 @@
+.cursorContainer{
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.spinnerComp{
+    top: 30%;
+    left: 45%;
+    height: 200px;
+}

@@ -1,0 +1,21 @@
+ 
+ <h1 style="color:darkorchid;">In first component. This is data generator instance</h1>
+
+ Basic Subject Implementation <br>
+ <input  [(ngModel)]="inputVal" />
+ <button style="color: Red;" (click)="setDataClicked($event)"> Set Data</button>
+
+ <br><br>Async Subject Implementation <br>
+ <input  [(ngModel)]="asyncVal" />
+ <button style="color: green;"  (click)="setAsyncDataClicked($event)"> Set Data</button>
+ <button style="color: green;"  (click)="completeCallclicked($event)">Call Complete</button>
+ 
+ <br> <br>Behaivioiur Subject Implementation <br>
+ <input  [(ngModel)]="inputbsVal" />
+ <button style="color: blue;" (click)="setbsDataClicked($event)"> Set Data</button>
+
+ 
+ <br> <br>Replay Subject Implementation <br>
+ <input  [(ngModel)]="inputrsVal" />
+ <button style="color: crimson;" (click)="setrsDataClicked($event)"> Set Data</button>
+

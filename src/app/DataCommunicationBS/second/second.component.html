@@ -1,0 +1,11 @@
+<h2 style="color:darkorchid;">I AM Second component. I just read the data from First component</h2>
+<br>Basic Subject Implementation<br>
+<h3 style="color: Red;" >{{receivedData}}</h3>
+<br>Async Subject Implementation (will read data only when complete is called for the said async subject instance)<br>
+<h3 style="color: green;" >{{receivedAsyncData}}</h3>
+<br>behaiviour Subject<br>
+<h3 style="color: blue;" >{{receivedbsData}}</h3>
+<br>Replay Subject<br>
+<h3 style="color:crimson;" >{{receivedrsData}}</h3>
+<button style="color:crimson;" (click)="subscribeReplaySubject()">Subscribe RS</button>
+

@@ -1,0 +1,8 @@
+<input type="checkbox"  [(ngModel)]="isBlue"/>change background colour
+<br> <div [ngStyle]="{'background': isBlue ? 'blue' : 'red'}" style="color: white;"> NG Style sample</div>
+
+<br><br>
+
+<br> <div  [ngClass]="isBlue?'class1':'class2'"   > NG  class sample</div>
+
+
